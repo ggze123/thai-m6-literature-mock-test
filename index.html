@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6f2855" />
+    <title>Mock Test ภาษาไทย ม.6</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <p class="eyebrow">THAI LITERATURE M.6</p>
+        <h1>ทบทวนวรรณคดีไทย ม.6</h1>
+        <p class="hero-note">51 ข้อ · ไตรภูมิพระร่วง ตอน มนุสสภูมิ · ตอบแล้วดูเฉลยทันที</p>
+      </header>
+
+      <section class="status-card" aria-label="ความคืบหน้า">
+        <div class="score-line"><span id="progressText">ข้อ 1 จาก 51</span><strong id="scoreText">ถูก 0 / 0 ข้อ</strong></div>
+        <div class="progress-track" aria-hidden="true"><div id="progressBar"></div></div>
+      </section>
+
+      <section class="quiz-card" aria-live="polite">
+        <p id="category" class="category"></p>
+        <h2 id="questionNumber"></h2>
+        <div id="questionText" class="question-text"></div>
+        <div id="choices" class="choices" role="group" aria-label="ตัวเลือกคำตอบ"></div>
+        <div id="feedback" class="feedback" hidden></div>
+        <div class="navigation">
+          <button id="previousButton" class="button secondary" type="button">← ข้อก่อนหน้า</button>
+          <button id="nextButton" class="button" type="button">ข้อถัดไป →</button>
+        </div>
+      </section>
+
+      <section id="finishCard" class="finish-card" hidden>
+        <p class="eyebrow">ทำครบแล้ว</p>
+        <h2 id="finishTitle">ผลการทำแบบทดสอบ</h2>
+        <p id="finishScore"></p>
+        <button id="restartButton" class="button secondary" type="button">เริ่มทำใหม่</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
